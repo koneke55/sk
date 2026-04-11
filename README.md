@@ -2,7 +2,7 @@
 
 A modern React portfolio website built with Vite, TypeScript, and Tailwind CSS.
 
-## Overview
+## Overview  
 
 This project is a personal portfolio site showcasing skills, experience, projects, and contact information. It includes reusable UI components, responsive layout, animated interactions, and a clean developer experience.
 
