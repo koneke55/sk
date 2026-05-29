@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import profileImage from "@/assets/profile.jpg";
 import { TypewriterName } from "./TypewriterName";
 
@@ -21,21 +21,21 @@ export const HeroSection = () => {
       <div className="max-w-7xl w-full grid md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Left content */}
         <div className="space-y-8 animate-fade-in">
-          <div className="inline-block mt-8">
-            <span className="px-3 py-2 md:px-4 md:py-2 rounded-full bg-secondary/50 border border-primary/20 text-xs md:text-sm text-muted-foreground">
-              Machine Learning Engineer & Data Analyst
+          <div className="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+            <span className="inline-flex w-fit max-w-full items-center rounded-full border border-primary/20 bg-secondary/50 px-3 py-2 text-xs leading-snug text-muted-foreground md:px-4 md:py-2 md:text-sm">
+              Machine Learning Engineer &amp; Data Analyst
             </span>
-          </div>
-
-          <div className="inline-block">
-            <a 
-              href="https://www.aiscientists-innov.com/services/services-2/" 
-              target="_blank" 
+            <a
+              href="https://www.aiscientists-innov.com/services/services-2/"
+              target="_blank"
               rel="noopener noreferrer"
-              className="px-3 py-2 md:px-4 md:py-2 rounded-full bg-primary/10 border border-primary/30 text-xs md:text-sm text-primary hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 group"
+              className="group inline-flex w-fit max-w-full items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-2 text-xs leading-snug text-primary transition-all duration-300 hover:border-primary/50 hover:bg-primary/20 md:px-4 md:py-2 md:text-sm"
             >
-              CTO @ AI Scientists Innovations
-              <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">→</span>
+              <span>CTO @ AI Scientists Innovations</span>
+              <ArrowRight
+                className="h-3.5 w-3.5 shrink-0 transition-transform group-hover:translate-x-0.5"
+                aria-hidden
+              />
             </a>
           </div>
 
@@ -50,7 +50,7 @@ export const HeroSection = () => {
           </div>
 
           <p className="text-base md:text-lg text-muted-foreground max-w-lg leading-relaxed">
-            Passionate about advancing AI-driven solutions in medical diagnostics, smart autonomous systems, and multilingual NLP. Bridging cutting-edge research with real-world applications to solve complex challenges.
+            Passionate about advancing AI-driven solutions in medical diagnostics, smart autonomous systems, and networking. Bridging cutting-edge research with real-world applications to solve complex challenges.
           </p>
 
           <div className="flex flex-wrap gap-3 md:gap-4">
